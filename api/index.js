@@ -21,6 +21,6 @@ mongoose.connect(MONGOURL).then(() =>{
 })
 .catch((error) => console.log(error));
 
-app.use(express.jason());
+app.use(express.json());
 app.use('/api/user', userRoutr);
 app.use('/api/auth', authRouter);
